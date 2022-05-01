@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<?import javafx.scene.control.TextField?>
+<AnchorPane prefHeight="284.0" prefWidth="579.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hybernatekontrolinis.JavaFxControllers.RegistrationController">
+   <children>
+      <Label layoutX="46.0" layoutY="43.0" text="Name:" />
+      <Label layoutX="319.0" layoutY="43.0" text="Surname:" />
+      <Label layoutX="47.0" layoutY="83.0" text="Login:" />
+      <Label layoutX="318.0" layoutY="83.0" text="Password:" />
+      <Label layoutX="37.0" layoutY="126.0" text="Company:" />
+      <TextField fx:id="nameTextField" layoutX="115.0" layoutY="39.0" />
+      <TextField fx:id="surnameTextField" layoutX="384.0" layoutY="39.0" prefHeight="25.0" prefWidth="175.0" />
+      <TextField fx:id="loginTextField" layoutX="115.0" layoutY="79.0" />
+      <TextField fx:id="passwordTextField" layoutX="384.0" layoutY="79.0" prefHeight="25.0" prefWidth="175.0" />
+      <TextField fx:id="companyTextField" layoutX="115.0" layoutY="122.0" />
+      <Label layoutX="115.0" layoutY="147.0" text="Enter only if you belong to company" textFill="RED">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="registrateButton" layoutX="463.0" layoutY="205.0" mnemonicParsing="false" onAction="#registrate" text="Registrate" />
+      <Button fx:id="back" layoutX="98.0" layoutY="205.0" mnemonicParsing="false" onAction="#goBackToLogin" text="Back to login" />
+   </children>
+</AnchorPane>
